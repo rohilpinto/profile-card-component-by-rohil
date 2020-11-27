@@ -17,7 +17,7 @@
 
   /* Font */
 
-  --fontsize-primary: 20px;
+  --fontsize-primary: 18px;
 
   --font-weight-primary: 400;
   --font-weight-secondary: 700;
@@ -32,7 +32,8 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--primary-color);
 	height: 100vh;
-	
+	overflow: hidden;
+	 
 }
 
 
@@ -44,12 +45,13 @@ h2 {
 
 span {
 	font-weight: var(--font-weight-primary);
+	color: var(--secondary-grey)
 }
 .main-container {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+ 
   display: flex;
   align-content: center;
   align-items: center;
@@ -83,7 +85,7 @@ span {
 
 .card {
   width: 350px;
-  height: 400px;
+  height: 390px;
   background: white;
   /* z-index: 2; */
   position: absolute;
@@ -102,7 +104,7 @@ span {
   border-radius: var(--profile-radius);
   border: solid rgb(255, 255, 255) 6px;
   margin-top: -50px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .username {
@@ -117,7 +119,7 @@ span {
 .profile-stats {
 	font-size: var(--fontsize-primary);
   margin-top: 30px;
-  border-top: solid 1px var(--secondary-grey);
+  border-top: solid 1px   rgba(0, 0, 0, 0.15);
 }
 
 .profile-stats-inner-container {
@@ -129,6 +131,14 @@ span {
 
 .text {
 	/* border: 1px solid #000; */
-	font-size: 16px;
-
+	font-size: 14px;
+	color: var(--secondary-grey);
+	letter-spacing: .9px;
 }
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+}
+
+/* media queries & svg */
